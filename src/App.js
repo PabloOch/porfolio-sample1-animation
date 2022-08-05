@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Stacks from './pages/Stacks';
+import Projects from './pages/Projects';
+import About from './pages/About';
+import Header from './components/Header';
+import { createGlobalStyle } from 'styled-components';
+ 
+const globalstyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    background: teal;
+    font-family: Open-Sans, Helvetica, Sans-Serif;
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <globalstyle />
+      <Header />
+      <Routes>
+        <Route path='/' element = { <Home /> }/>
+        <Route path='/stacks' element = { <Stacks /> }/>
+        <Route path='/projects' element = { <Projects /> }/>
+        <Route path='/about' element = { <About /> }/>
+      </Routes>
     </div>
   );
 }
