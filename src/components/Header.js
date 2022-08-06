@@ -8,7 +8,7 @@ function Header() {
     <main>
       <LinkPosition>
         <div>
-          <IconeJS href='https://github.com/JonathanProjetos' alt='GitHub'>JS</IconeJS>
+          <IconeJS href='http://localhost:3002/' alt='GitHub'>JS</IconeJS>
         </div>
         <LinkHeader>
           <Link to="/about">About</Link>

@@ -6,8 +6,9 @@ import Projects from './pages/Projects';
 import About from './pages/About';
 import Header from './components/Header';
 import { createGlobalStyle } from 'styled-components';
- 
-const globalstyle = createGlobalStyle`
+import Provider from './context/Provider';
+
+const globalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
@@ -19,14 +20,15 @@ const globalstyle = createGlobalStyle`
 function App() {
   return (
     <div>
-      <globalstyle />
-      <Header />
-      <Routes>
-        <Route path='/' element = { <Home /> }/>
-        <Route path='/stacks' element = { <Stacks /> }/>
-        <Route path='/projects' element = { <Projects /> }/>
-        <Route path='/about' element = { <About /> }/>
-      </Routes>
+      <Provider>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/stacks' element={<Stacks />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </Provider>
     </div>
   );
 }

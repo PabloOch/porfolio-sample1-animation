@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 function Stacks() {
   return (
-    <div>Stacks</div>
+    <div>
+      <Footer />
+    </div>
   )
 }
 
