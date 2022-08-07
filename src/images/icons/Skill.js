@@ -28,7 +28,7 @@ export const aprendidas = [
 
   {
     img: css3,
-    title: "JavaScript"
+    title: "CSS3"
   },
 
   {
