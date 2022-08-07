@@ -28,7 +28,7 @@ function Stacks() {
             },
           }}
         >
-          Skills
+          Skills.
         </Box>
         <Grid
           container
