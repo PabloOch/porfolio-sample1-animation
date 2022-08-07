@@ -12,8 +12,8 @@ function Header() {
         </div>
         <LinkHeader>
           <Link to="/about">About</Link>
-          <Link to="/stacks">Stacks</Link>
-          <Link to="/projects">Projetos</Link>
+          <Link to="/stacks">Stack</Link>
+          <Link to="/projects">Project</Link>
         </LinkHeader>
       </LinkPosition>
     </main>
