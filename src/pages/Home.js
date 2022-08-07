@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext, useState }  from 'react';
 import TypeAnimation from 'react-type-animation';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { Button } from '@mui/material';
+import { ButtonHome } from '../style/Header'
+import Context from '../context/Context';
+//import { Button } from '@mui/material';
+import Arrow from '../images/arrow.svg'
+import Arrow1 from "../images/arrow-1.svg";
 
 function Home() {
+  const [shown,  setIsShown] = useState(false)
+  const { redirectAbout } = useContext(Context) 
   return (
     <>
       <Box
@@ -81,15 +87,21 @@ function Home() {
           justifyContent: 'center',
         }}
       >
-        <Button
-          sx={{
-            height: '50px',
-            width: '50px',
-            border: '1px solid black',
-          }}
+        <ButtonHome
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}
+        onClick={ redirectAbout }
         >
-          Next
-        </Button>
+          { shown? (
+            <img 
+          src={ Arrow1 } 
+          alt='Seta'/>
+          ) : (
+            <img 
+            src={ Arrow } 
+            alt='Seta'/>
+          ) }
+        </ButtonHome>
       </Box>
     </>
   );

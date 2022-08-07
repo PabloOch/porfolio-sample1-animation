@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState  } from 'react';
+import { useNavigate } from "react-router-dom";
 import Context from './Context';
 
 
 function Provider ({children}) {
+  const navigate = useNavigate()
   const [mode, setMode] = useState('white');
   console.log(mode);
 
@@ -16,7 +18,19 @@ function Provider ({children}) {
     }
   }
 
+  const redirectAbout = () => {
+    navigate('/about')
+  }
+
+/*   const imageWhite = () => {
+    return (
+      <img src={ Arrow } alt="Seta"/>
+    )
+  }
+ */
+
   const context = {
+    redirectAbout,
     toggleColor,
     mode
   }

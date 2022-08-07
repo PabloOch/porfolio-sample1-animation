@@ -54,3 +54,25 @@ export const  LinkHeader = styled.div`
     }
 
 `;
+
+export const ButtonHome = styled.button`
+  width: 210px;
+  height: 120px;
+  background-color: white;
+  border: none;
+
+  img {
+    border: 0;
+    height: 100px;
+    width: 150px;
+    
+    :hover {
+      width: 210px;
+      height: 120px;
+      background-color: white;
+      border: solid 7px black;
+      border-radius: 15px
+    }
+  }
+
+`;

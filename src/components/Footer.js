@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 // import Box from '@mui/material/Box';
 // import Container from '@mui/material/Container';
 import Context from '../context/Context';
-import { Stack, Box } from '@mui/material';
-import Typography from '@mui/material/Typography';
+import { Stack, Box,  } from '@mui/material';
+// import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -44,12 +44,14 @@ function BoxSx() {
           component="p"
           sx={{ flexGrow: 0 }}
         >
-          <Typography
+          <p
+            component="p"
+            variant="body1"
             align="large"
             sx={{ flexGrow: 0 }}
           >
             Feito em  React Material UI é Styled Components.
-          </Typography>
+          </p>
 
           <IconButton
             size="large"
