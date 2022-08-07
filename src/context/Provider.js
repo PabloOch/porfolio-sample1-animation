@@ -22,13 +22,6 @@ function Provider ({children}) {
     navigate('/about')
   }
 
-/*   const imageWhite = () => {
-    return (
-      <img src={ Arrow } alt="Seta"/>
-    )
-  }
- */
-
   const context = {
     redirectAbout,
     toggleColor,
