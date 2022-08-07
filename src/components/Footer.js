@@ -1,9 +1,6 @@
 import React, { useContext } from 'react';
-// import Box from '@mui/material/Box';
-// import Container from '@mui/material/Container';
 import Context from '../context/Context';
 import { Stack, Box,  } from '@mui/material';
-// import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

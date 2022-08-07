@@ -5,9 +5,8 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { ButtonHome } from '../style/Header'
 import Context from '../context/Context';
-//import { Button } from '@mui/material';
-import Arrow from '../images/arrow.svg'
-import Arrow1 from "../images/arrow-1.svg";
+import Arrow from '../images/icons/arrow.svg'
+import Arrow1 from "../images/icons/arrow-1.svg";
 
 function Home() {
   const [shown,  setIsShown] = useState(false)
