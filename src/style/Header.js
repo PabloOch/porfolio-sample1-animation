@@ -25,6 +25,7 @@ export const LinkPosition = styled.nav`
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  margin-bottom: 80px;
 `;
 
 

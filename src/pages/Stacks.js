@@ -21,8 +21,9 @@ function Stacks() {
           align="center"
           textAlign= "center"
           sx={{
-            py: 18,
+            py: 10,
             color: 'black',
+            marginTop: "20px",
             fontSize: {
               xs: '3rem',
             },
@@ -63,7 +64,7 @@ function Stacks() {
           align="center"
           textAlign= "center"
           sx={{
-            py: 18  ,
+            py: 10  ,
             color: 'color',
             fontSize: {
               xs: '3rem',

@@ -8,12 +8,12 @@ function Header() {
     <main>
       <LinkPosition>
         <div>
-          <IconeJS href='http://localhost:3003/' alt='GitHub'>JS</IconeJS>
+          <IconeJS href='https://my-portifolio-eta.vercel.app/' alt='GitHub'>JS</IconeJS>
         </div>
         <LinkHeader>
           <Link to="/about">About</Link>
-          <Link to="/stacks">Stacks</Link>
-          <Link to="/projects">Projetos</Link>
+          <Link to="/stacks">Stack</Link>
+          <Link to="/projects">Project</Link>
         </LinkHeader>
       </LinkPosition>
     </main>
