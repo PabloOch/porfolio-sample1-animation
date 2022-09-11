@@ -61,6 +61,7 @@ export const ButtonHome = styled.button`
   height: 120px;
   background-color: white;
   border: none;
+  // padding-bottom: 50px;
 
   img {
     border: 0;
