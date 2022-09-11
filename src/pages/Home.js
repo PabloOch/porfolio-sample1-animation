@@ -28,7 +28,7 @@ function Home() {
             component="h1"
             sx={{
               fontSize: {
-                lg: '6rem',
+                lg: '5rem',
                 md: '6rem',
                 sm: '6rem',
                 xs: '3rem',
@@ -59,6 +59,8 @@ function Home() {
                 sm: '2rem',
                 xs: '1.7rem',
               },
+              display: "flex",
+              justifyContent: "center",
               color: 'text.disabled',
               pl: 2,
             }}
