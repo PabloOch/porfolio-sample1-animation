@@ -47,7 +47,7 @@ function BoxSx() {
             align="large"
             sx={{ flexGrow: 0 }}
           >
-            Feito em  React Material UI é Styled Components.
+            Desenvolvido em  React Material UI é Styled Components.
           </p>
 
           <IconButton

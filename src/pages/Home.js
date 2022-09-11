@@ -16,7 +16,7 @@ function Home() {
       <Box
         component="section"
         sx={{
-          height: '70vh',
+          height: '55vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -36,7 +36,7 @@ function Home() {
               color: 'text.grey',
             }}
           >
-            Olá, me chamo!
+            Olá, me chamo
             {' '}
             <Box
               component="span"
@@ -45,7 +45,7 @@ function Home() {
               }}
 
             >
-              Jonathan santos
+              Jonathan Santos
 
             </Box>
           </Typography>
@@ -67,11 +67,11 @@ function Home() {
               cursor
               sequence={[
                 'Front-end Developer.',
-                6000,
+                8000,
                 'Back-end Student.',
-                6000,
+                8000,
               ]}
-              wrapper="span"
+              wrapper="p"
               repeat={Infinity}
             />
           </Typography>
@@ -80,7 +80,7 @@ function Home() {
       <Box
         component="section"
         sx={{
-          height: '15vh',
+          height: '10vh',
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'center',
