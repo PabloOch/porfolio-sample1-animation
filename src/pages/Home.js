@@ -73,7 +73,7 @@ function Home() {
                 'Back-end Student.',
                 6000,
               ]}
-              wrapper="p"
+              wrapper="span"
               repeat={Infinity}
             />
           </Typography>

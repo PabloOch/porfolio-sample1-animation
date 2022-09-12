@@ -3,9 +3,9 @@ import Footer from '../components/Footer'
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 // import Stack from '@mui/material/Stack';
-import perfil from '../images/profile/perfilexemple.svg'
 // import Grid from '@mui/material/Grid';
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
+import perfil from '../images/profile/perfilexemple.svg'
 import message from '../util/Message';
 
 function About() {
@@ -24,6 +24,7 @@ function About() {
             justifyContent: 'center',
             alignItems: 'center',
             width: '50vw',
+            marginTop: '90px'
           }}
         >
           <img src={ perfil } alt='Foto'/>
@@ -33,7 +34,7 @@ function About() {
             display: 'flex',
             justifyContent: 'center',
             flexWrap: 'wrap',
-            alignItems: 'center',
+            textAlign: 'start',
             width: '50vw',
           }}
         >
