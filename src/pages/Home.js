@@ -69,11 +69,11 @@ function Home() {
               cursor
               sequence={[
                 'Front-end Developer.',
-                8000,
+                6000,
                 'Back-end Student.',
-                8000,
+                6000,
               ]}
-              wrapper="p"
+              wrapper="span"
               repeat={Infinity}
             />
           </Typography>

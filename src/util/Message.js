@@ -1,0 +1,3 @@
+const message = 'Após 14 anos de experiência no ramo industrial, almejo agora um novo caminho para trilhar com o objetivo bem nítido. Fazer a diferença no cotidiano de todos nós que consumimos aplicações ‘web’, este é meu primeiro passo de muitos, que quero compartilhar, aprender, e contribuir com o grupo que visa a melhoria e a criação de novas tecnologias. Para que possa automatizar e melhorar os processos do dia a dia.';
+
+export default message;

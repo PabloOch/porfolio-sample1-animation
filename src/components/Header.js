@@ -11,9 +11,9 @@ function Header() {
           <IconeJS href='https://my-portifolio-eta.vercel.app/' alt='GitHub'>JS</IconeJS>
         </div>
         <LinkHeader>
-          <Link to="/about">About</Link>
-          <Link to="/stacks">Stack</Link>
-          <Link to="/projects">Project</Link>
+          <Link to="/about">Sobre</Link>
+          <Link to="/stacks">Stacks</Link>
+          <Link to="/projects">Projetos</Link>
         </LinkHeader>
       </LinkPosition>
     </main>
