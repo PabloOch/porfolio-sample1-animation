@@ -53,7 +53,7 @@ const ModalCardStore = () => {
           Enviar vendas para o sistema e essas vendas devem validar se o produto em questão existe, 
           também é possível ler, deletar e atualizar vendas;
           </p>
-          <h5>Link do repositório no iconé do Github.</h5>
+          <h5>Link do repositório no icone do Github.</h5>
           <IconButton
             size="large"
             color="primary"

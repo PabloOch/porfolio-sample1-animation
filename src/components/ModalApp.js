@@ -53,7 +53,7 @@ const ModalCardAPP = () => {
           tambem é possível pesquisar uma receita pelo ingrediente e também por nacionalidade, 
           a aplicação também conta com uma funcionalidade que possibilita pega uma receita surpresa que é caracterizada por uma recita aleatória.
           </p>
-          <h5>Link do repositório no iconé do Github.</h5>
+          <h5>Link do repositório no icone do Github.</h5>
           <IconButton
             size="large"
             color="primary"
