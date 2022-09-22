@@ -8,7 +8,7 @@ function Header() {
     <main>
       <LinkPosition>
         <div>
-          <IconeJS href='https://my-portifolio-git-link-home-jonathanprojetos.vercel.app/' alt='GitHub'>JS</IconeJS>
+          <IconeJS href='https://my-portifolio-git-link-home-jonathanprojetos.vercel.app' alt='GitHub'>JS</IconeJS>
         </div>
         <LinkHeader>
           <Link to="/about">Sobre</Link>
