@@ -109,7 +109,7 @@ function About() {
                 color="primary"
                 backgroudcolor="white"
                 sx={{ color:'black' }}
-                href="https:wa.me/5531975103073"
+                href="https://wa.me/5531975103073"
                 target="_blank"
               >
                 <WhatsAppIcon fontSize="inherit" />
