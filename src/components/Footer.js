@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
-import Context from '../context/Context';
+// import Context from '../context/Context';
 import { Stack, Box,  } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function BoxSx() {
-  const { mode, toggleColor } = useContext(Context)
+  // const { mode, toggleColor } = useContext(Context)
   return (
     <Box
       position="fixed"

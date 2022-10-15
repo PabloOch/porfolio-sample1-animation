@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import js from '../images/js.png'
 import { IconeJS, LinkPosition, LinkHeader } from '../style/Header'
 
 function Header() {
@@ -8,7 +7,7 @@ function Header() {
     <main>
       <LinkPosition>
         <div>
-          <IconeJS href='https://my-portifolio-git-link-home-jonathanprojetos.vercel.app' alt='GitHub'>JS</IconeJS>
+          <IconeJS href='https://my-portifolio-eta.vercel.app/' alt='Home'>JS</IconeJS>
         </div>
         <LinkHeader>
           <Link to="/about">Sobre</Link>
