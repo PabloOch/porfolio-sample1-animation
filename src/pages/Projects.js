@@ -1,17 +1,14 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import Container from '@mui/material/Container';
-// import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import CardMedia from '@mui/material/CardMedia';
-// import CardActionArea from '@mui/material/CardActionArea';
 import images from '../images/project/ImageProjetos';
 import ModalCardAPP from '../components/ModalApp';
 import ModalCardStore from '../components/ModalStore';
 import ModalBlog from '../components/ModalBlog';
 
-// import Stack from '@mui/material/Stack';
 
 function Projects() {
   return (
