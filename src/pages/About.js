@@ -10,6 +10,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 function About() {
   return (
@@ -109,10 +110,20 @@ function About() {
                 color="primary"
                 backgroudcolor="white"
                 sx={{ color:'black' }}
-                href="https:wa.me/5531975103073"
+                href="https://wa.me/5531975103073"
                 target="_blank"
               >
                 <WhatsAppIcon fontSize="inherit" />
+            </IconButton>
+            <IconButton
+                size="large"
+                color="primary"
+                backgroudcolor="white"
+                sx={{ color:'black' }}
+                href="https://docs.google.com/document/d/1PZlAgKIy0eBQIAsFTV4uZmPJihh5fpVqTQdm1T0Z4DE/edit#"
+                target="_blank"
+              >
+                <ContactPageIcon fontSize="inherit" />
             </IconButton>
 
           </Box>
