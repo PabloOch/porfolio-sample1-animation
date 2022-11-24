@@ -68,9 +68,7 @@ function Home() {
             <TypeAnimation
               cursor
               sequence={[
-                'Front-end Developer.',
-                6000,
-                'Back-end Student.',
+                'Full Stack Developer.',
                 6000,
               ]}
               wrapper="span"
