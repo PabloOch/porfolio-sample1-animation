@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import Context from '../context/Context';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Deploy from '@mui/icons-material/AutoAwesome'
 
 const style = {
   position: 'absolute',
@@ -22,13 +23,13 @@ const style = {
 };
 
 
-const ModalCardStore = () => {
-  const { handleOpen, handleClose, openStore } = useContext(Context) 
+const ModalWallet = () => {
+  const { handleOpen, handleClose, openWallet } = useContext(Context) 
   return (
     <div>
       <Button 
         onClick={handleOpen}
-        id='STORE MANAGER'
+        id='WALLET'
         variant="contained"
             sx={{ 
               color:'black',
@@ -37,22 +38,23 @@ const ModalCardStore = () => {
               border: 'solid black 1px',
               '&:hover':{ border:'black', background: 'black', color: 'white'} }}
         >
-          Store Manager
+          Wallet
         </Button>
       <Modal
         hideBackdrop
-        open={openStore}
+        open={openWallet}
         onClose={handleClose}
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description"
       >
         <Box sx={{ ...style, width: 200 }}>
-          <h2 id="child-modal-title">Store Manager</h2>
+          <h2 id="child-modal-title">Wallet</h2>
           <p id="child-modal-description">
-          API RESTful utilizando arquitetura MSC. A pessoa usuária, 
-          independente de cadastro, deve conseguir, adicionar, ler, deletar e atualizar produtos. 
-          Enviar vendas para o sistema e essas vendas devem validar se o produto em questão existe, 
-          também é possível ler, deletar e atualizar vendas;
+          Está e uma aplicação para cadastramento de 'tarefas', 
+          nela e possível inserir valor dedicado para gastos e converter valores de real para varias moedas estrangeiras, 
+          a aplicação permite inserir,excluir ou editar valores já adicionados há tabela, 
+          após fazer o login na aplicação na área superior direito tem o somatório do valores 
+          de todas as tabelas e o valor total sempre e atualizado quando adicionado, excluído ou editado um valor na tabela.
           </p>
           <h5>Link do repositório no icone do Github.</h5>
           <IconButton
@@ -60,15 +62,25 @@ const ModalCardStore = () => {
             color="primary"
             backgroudcolor="white"
             sx={{ p: 0, pl: 2, color:'black' }}
-            href="https://github.com/JonathanProjetos/Store-Manager"
+            href="https://github.com/JonathanProjetos/Wallet"
             target="_blank"
           >
             <GitHubIcon fontSize="inherit" />
           </IconButton>
+          <IconButton
+            size="large"
+            color="primary"
+            backgroudcolor="white"
+            sx={{ p: 0, pl: 2, color:'black' }}
+            href="https://wallet-1p88arfrh-jonathanprojetos.vercel.app/"
+            target="_blank"
+          >
+            <Deploy fontSize="inherit" />
+          </IconButton>
           <Button 
             onClick={handleClose} 
             variant="contained"
-            id='STORE MANAGER'
+            id='WALLET'
             sx={{ 
               color:'black',
               background: 'white',
@@ -83,4 +95,4 @@ const ModalCardStore = () => {
   )
 }
 
-export default ModalCardStore;
+export default ModalWallet;

@@ -28,6 +28,7 @@ const ModalCardAPP = () => {
     <div>
       <Button 
         onClick={handleOpen}
+        id='APP DE RECEITAS'
         variant="contained"
             sx={{ 
               color:'black',

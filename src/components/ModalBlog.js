@@ -28,6 +28,7 @@ const ModalCardStore = () => {
     <div>
       <Button 
         onClick={handleOpen}
+        id='BLOGS API'
         variant="contained"
             sx={{ 
               color:'black',
