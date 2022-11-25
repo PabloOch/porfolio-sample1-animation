@@ -1,9 +1,10 @@
 import React, { useState  } from 'react';
 import { useNavigate } from "react-router-dom";
+import { PropTypes } from 'prop-types';
 import Context from './Context';
 
 
-function Provider ({children}) {
+function Provider ({ children }) {
   const navigate = useNavigate()
   const [mode, setMode] = useState('white');
   const [open, setOpen] = useState('')
@@ -108,6 +109,10 @@ function Provider ({children}) {
       setOpenStarWars(false);
     }
   };
+
+  Provider.propTypes = {
+    children: PropTypes.node.isRequired,
+  }
 
   const context = {
     handleOpen,

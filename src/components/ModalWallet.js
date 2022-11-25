@@ -50,7 +50,7 @@ const ModalWallet = () => {
         <Box sx={{ ...style, width: 200 }}>
           <h2 id="child-modal-title">Wallet</h2>
           <p id="child-modal-description">
-          Está e uma aplicação para cadastramento de 'tarefas', 
+          Está e uma aplicação para cadastramento de tarefas, 
           nela e possível inserir valor dedicado para gastos e converter valores de real para varias moedas estrangeiras, 
           a aplicação permite inserir,excluir ou editar valores já adicionados há tabela, 
           após fazer o login na aplicação na área superior direito tem o somatório do valores 
