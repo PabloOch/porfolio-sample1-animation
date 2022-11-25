@@ -22,13 +22,13 @@ const style = {
 };
 
 
-const ModalCardStore = () => {
-  const { handleOpen, handleClose, openStore } = useContext(Context) 
+const ModalTFC = () => {
+  const { handleOpen, handleClose, openTFC } = useContext(Context) 
   return (
     <div>
       <Button 
         onClick={handleOpen}
-        id='STORE MANAGER'
+        id="TFC"
         variant="contained"
             sx={{ 
               color:'black',
@@ -37,22 +37,25 @@ const ModalCardStore = () => {
               border: 'solid black 1px',
               '&:hover':{ border:'black', background: 'black', color: 'white'} }}
         >
-          Store Manager
+          TFC - Trybe Foodball Club
         </Button>
       <Modal
         hideBackdrop
-        open={openStore}
+        open={openTFC}
         onClose={handleClose}
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description"
       >
         <Box sx={{ ...style, width: 200 }}>
-          <h2 id="child-modal-title">Store Manager</h2>
+          <h2 id="child-modal-title">TFC Football Club</h2>
           <p id="child-modal-description">
-          API RESTful utilizando arquitetura MSC. A pessoa usuária, 
-          independente de cadastro, deve conseguir, adicionar, ler, deletar e atualizar produtos. 
-          Enviar vendas para o sistema e essas vendas devem validar se o produto em questão existe, 
-          também é possível ler, deletar e atualizar vendas;
+          TFC é um site informativo sobre partidas e classificações de times de futebol! soccer. 
+          O objetivo deste desafio é desenvolver uma API utilizando modelagem de dados através do 
+          Sequelize para ser consumida pelo front que já está completamente implementado. 
+          O acesso aos end-points, segue os princípios REST. 
+          Para acessar alguns endereços vinculado ao usuário é necessário fazer autenticação e quando
+          autenticado a API responderá trazendo um token no corpo da requisição. 
+          O token deverá ser inserido no cabeçalho de cada requisição privada, com o intuito de autenticação.
           </p>
           <h5>Link do repositório no icone do Github.</h5>
           <IconButton
@@ -60,7 +63,7 @@ const ModalCardStore = () => {
             color="primary"
             backgroudcolor="white"
             sx={{ p: 0, pl: 2, color:'black' }}
-            href="https://github.com/JonathanProjetos/Store-Manager"
+            href="https://github.com/JonathanProjetos/TFC-Trybe-Football-Club"
             target="_blank"
           >
             <GitHubIcon fontSize="inherit" />
@@ -68,7 +71,7 @@ const ModalCardStore = () => {
           <Button 
             onClick={handleClose} 
             variant="contained"
-            id='STORE MANAGER'
+            id='TFC'
             sx={{ 
               color:'black',
               background: 'white',
@@ -83,4 +86,4 @@ const ModalCardStore = () => {
   )
 }
 
-export default ModalCardStore;
+export default ModalTFC;

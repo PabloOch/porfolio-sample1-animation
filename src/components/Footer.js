@@ -1,6 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 // import Context from '../context/Context';
-import { Stack, Box,  } from '@mui/material';
+import { Stack, Box  } from '@mui/material';
+import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -26,8 +27,6 @@ function BoxSx() {
       >
         <Box
           align="start"
-          variant="body1"
-          component="p"
           sx={{ flexGrow: 1 }}
         >
           Jonathan Santos
@@ -37,18 +36,14 @@ function BoxSx() {
         <Box
           display='flex'
           align="center"
-          variant="body1"
-          component="p"
           sx={{ flexGrow: 0 }}
         >
-          <p
-            component="p"
-            variant="body1"
+          <Typography
             align="large"
             sx={{ flexGrow: 0 }}
           >
             Feito em  React Material UI é Styled Components.
-          </p>
+          </Typography>
 
           <IconButton
             size="large"

@@ -1,14 +1,18 @@
 import React, { useState  } from 'react';
 import { useNavigate } from "react-router-dom";
+import { PropTypes } from 'prop-types';
 import Context from './Context';
 
 
-function Provider ({children}) {
+function Provider ({ children }) {
   const navigate = useNavigate()
   const [mode, setMode] = useState('white');
   const [open, setOpen] = useState('')
   const [openStore, setOpenStore] = useState('')
   const [openBlog, setOpenBlog] = useState('')
+  const [openTFC, setOpenTFC] = useState('')
+  const [openWallet, setOpenWallet] = useState('')
+  const [openStarWars, setOpenStarWars] = useState('')
   console.log(mode);
 
   const toggleColor = ({ target }) => {
@@ -26,28 +30,61 @@ function Provider ({children}) {
   }
 
   const handleOpen = ({ target }) => {
-    console.log(target.innerText)
-    if(target.innerText === "APP DE RECEITAS"){
+    if(target.id === "APP DE RECEITAS"){
       setOpen(true);
       setOpenStore(false);
       setOpenBlog(false);
+      setOpenTFC(false);
+      setOpenWallet(false);
+      setOpenStarWars(false);
     }
 
-    if(target.innerText === "STORE MANAGER"){
+    if(target.id === "STORE MANAGER"){
       setOpen(false);
       setOpenStore(true);
       setOpenBlog(false);
+      setOpenTFC(false);
+      setOpenWallet(false);
+      setOpenStarWars(false);
     }
 
-    if(target.innerText === "BLOGS API"){
+    if(target.id === "BLOGS API"){
       setOpen(false);
       setOpenStore(false);
       setOpenBlog(true);
+      setOpenTFC(false);
+      setOpenWallet(false);
+      setOpenStarWars(false);
+    }
+
+    if(target.id === "TFC"){
+      setOpen(false);
+      setOpenStore(false);
+      setOpenBlog(false);
+      setOpenTFC(true);
+      setOpenWallet(false);
+      setOpenStarWars(false);
+    }
+    if(target.id === "WALLET"){
+      setOpen(false);
+      setOpenStore(false);
+      setOpenBlog(false);
+      setOpenTFC(false);
+      setOpenWallet(true);
+      setOpenStarWars(false);
+    }
+    if(target.id === "STARWARS"){
+      setOpen(false);
+      setOpenStore(false);
+      setOpenBlog(false);
+      setOpenTFC(false);
+      setOpenWallet(false);
+      setOpenStarWars(true);
     }
   };
 
   const handleClose = ({ target }) => {
-
+    console.log(target.id);
     if(target.id === "APP DE RECEITAS"){
       setOpen(false);
     }
@@ -59,7 +96,23 @@ function Provider ({children}) {
     if(target.id === "BLOGS API"){
       setOpenBlog(false);
     }
+
+    if(target.id === "TFC"){
+      setOpenTFC(false);
+    }
+
+    if(target.id === "WALLET"){
+      setOpenWallet(false);
+    }
+
+    if(target.id === "STARWARS"){
+      setOpenStarWars(false);
+    }
   };
+
+  Provider.propTypes = {
+    children: PropTypes.node.isRequired,
+  }
 
   const context = {
     handleOpen,
@@ -68,10 +121,11 @@ function Provider ({children}) {
     toggleColor,
     mode,
     open,
-    setOpenBlog,
     openBlog,
-    setOpenStore,
-    openStore
+    openStore,
+    openTFC,
+    openWallet,
+    openStarWars
   }
 
   return (

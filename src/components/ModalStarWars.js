@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import Context from '../context/Context';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Deploy from '@mui/icons-material/AutoAwesome'
 
 const style = {
   position: 'absolute',
@@ -22,13 +23,13 @@ const style = {
 };
 
 
-const ModalCardStore = () => {
-  const { handleOpen, handleClose, openStore } = useContext(Context) 
+const ModalStarWars = () => {
+  const { handleOpen, handleClose, openStarWars } = useContext(Context) 
   return (
     <div>
       <Button 
         onClick={handleOpen}
-        id='STORE MANAGER'
+        id='STARWARS'
         variant="contained"
             sx={{ 
               color:'black',
@@ -37,22 +38,21 @@ const ModalCardStore = () => {
               border: 'solid black 1px',
               '&:hover':{ border:'black', background: 'black', color: 'white'} }}
         >
-          Store Manager
+          StarWars
         </Button>
       <Modal
         hideBackdrop
-        open={openStore}
+        open={openStarWars}
         onClose={handleClose}
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description"
       >
         <Box sx={{ ...style, width: 200 }}>
-          <h2 id="child-modal-title">Store Manager</h2>
+          <h2 id="child-modal-title">StarWars</h2>
           <p id="child-modal-description">
-          API RESTful utilizando arquitetura MSC. A pessoa usuária, 
-          independente de cadastro, deve conseguir, adicionar, ler, deletar e atualizar produtos. 
-          Enviar vendas para o sistema e essas vendas devem validar se o produto em questão existe, 
-          também é possível ler, deletar e atualizar vendas;
+          Este projeto trata-se de uma aplicação com a tematica de Starwars e faz requisição
+           a uma api para consumir dados dos planetas e suas características, 
+           está aplicação possibilita fazer filtros em uma tabela de diversas formas.
           </p>
           <h5>Link do repositório no icone do Github.</h5>
           <IconButton
@@ -60,15 +60,25 @@ const ModalCardStore = () => {
             color="primary"
             backgroudcolor="white"
             sx={{ p: 0, pl: 2, color:'black' }}
-            href="https://github.com/JonathanProjetos/Store-Manager"
+            href="https://github.com/JonathanProjetos/StarWarsSeachPlanet"
             target="_blank"
           >
             <GitHubIcon fontSize="inherit" />
           </IconButton>
+          <IconButton
+            size="large"
+            color="primary"
+            backgroudcolor="white"
+            sx={{ p: 0, pl: 2, color:'black' }}
+            href="https://star-wars-seach-planet-1al75pyo7-jonathanprojetos.vercel.app/"
+            target="_blank"
+          >
+            <Deploy fontSize="inherit" />
+          </IconButton>
           <Button 
             onClick={handleClose} 
             variant="contained"
-            id='STORE MANAGER'
+            id='STARWARS'
             sx={{ 
               color:'black',
               background: 'white',
@@ -83,4 +93,4 @@ const ModalCardStore = () => {
   )
 }
 
-export default ModalCardStore;
+export default ModalStarWars;
