@@ -29,6 +29,6 @@ function Header() {
       )}
     </main>
   )
-};
+}
 
 export default Header
