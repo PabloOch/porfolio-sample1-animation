@@ -13,6 +13,9 @@ function Stacks() {
       <Stack
         direction={{ xs: 'column', sm: 'row' }}
         id="s"
+        sx={{
+          marginBottom: '10vh',
+        }}
       >
         <Container>
         <Box

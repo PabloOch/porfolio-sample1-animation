@@ -35,6 +35,7 @@ function About() {
               display: 'flex',
               justifyContent: 'center',
               width: '40vw',
+              // height: '50vh',
             }}
           >
             <Avatar 
@@ -42,7 +43,7 @@ function About() {
               alt='Foto de jonathan'
               sx={{
                 width: '350px',
-                height: '350px'
+                height: '350px',
               }}
               />
           </Box>
@@ -53,6 +54,7 @@ function About() {
               flexWrap: 'wrap',
               textAlign: 'start',
               width: '40vw',
+              height: '30vh',
               }}
             >
             <Typography 
@@ -60,6 +62,7 @@ function About() {
               sx={{
                 fontSize: '25px',
                 fontWeight: '600',
+                marginTop: '20px',
               }}
               >
               Sou um aspirante a Desenvolvedor Web em constante aprendizado.
@@ -73,7 +76,7 @@ function About() {
           <Typography 
             variant='h4'
             sx={{
-              marginTop: '100px',
+              marginTop: '50px',
               display: 'flex',
               justifyContent: 'center'
             }}

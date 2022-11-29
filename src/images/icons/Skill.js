@@ -54,10 +54,7 @@ export const aprendidas = [
   {
     img: docker,
     title: "Docker"
-  }
-];
-
-export const desenvolvendo = [
+  },
   {
     img: node,
     title: "Node.js"
@@ -79,13 +76,16 @@ export const desenvolvendo = [
   },
 
   {
-    img: python,
-    title: "Python"
-  },
-
-  {
     img: typeScript,
     title: "TypeScript"
+  },
+];
+
+export const desenvolvendo = [
+
+  {
+    img: python,
+    title: "Python"
   },
 
 ];
