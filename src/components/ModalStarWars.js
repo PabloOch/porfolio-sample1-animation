@@ -70,7 +70,7 @@ const ModalStarWars = () => {
             color="primary"
             backgroudcolor="white"
             sx={{ p: 0, pl: 2, color:'black' }}
-            href="https://star-wars-seach-planet-1al75pyo7-jonathanprojetos.vercel.app/"
+            href="https://star-wars-seach-planet-jonathanprojetos.vercel.app/"
             target="_blank"
           >
             <Deploy fontSize="inherit" />
