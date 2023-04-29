@@ -12,6 +12,9 @@ import react from '../icons/react.svg';
 import redux from '../icons/redux.svg';
 import docker from '../icons/docker.svg';
 import typeScript from '../icons/typescript.svg';
+import aws from '../icons/amazonAWS.svg';
+import golang from '../icons/golang.svg';
+import java from '../icons/java.svg';
 
 
 export const aprendidas = [
@@ -87,5 +90,16 @@ export const desenvolvendo = [
     img: python,
     title: "Python"
   },
-
+  {
+    img: aws,
+    title: "AWS-Practitioner"
+  },
+  {
+    img: golang,
+    title: "Golang"
+  },
+  {
+    img: java,
+    title: "Java"
+  }
 ];
