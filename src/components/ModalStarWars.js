@@ -1,8 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
-import Context from '../context/Context';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Deploy from '@mui/icons-material/AutoAwesome'
@@ -24,11 +23,21 @@ const style = {
 
 
 const ModalStarWars = () => {
-  const { handleOpen, handleClose, openStarWars } = useContext(Context) 
+
+  const [toggle, setToogle] = useState('')
+
+  const handleToggle = () => {
+    if (toggle === true) {
+      setToogle(false)
+    }else {
+      setToogle(true);
+    }
+  }
+
   return (
     <div>
       <Button 
-        onClick={handleOpen}
+        onClick={handleToggle}
         id='STARWARS'
         variant="contained"
             sx={{ 
@@ -42,8 +51,8 @@ const ModalStarWars = () => {
         </Button>
       <Modal
         hideBackdrop
-        open={openStarWars}
-        onClose={handleClose}
+        open={toggle}
+        onClose={handleToggle}
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description"
       >
@@ -76,7 +85,7 @@ const ModalStarWars = () => {
             <Deploy fontSize="inherit" />
           </IconButton>
           <Button 
-            onClick={handleClose} 
+            onClick={handleToggle} 
             variant="contained"
             id='STARWARS'
             sx={{ 

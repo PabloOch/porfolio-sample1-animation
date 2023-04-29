@@ -1,8 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
-import Context from '../context/Context';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Deploy from '@mui/icons-material/AutoAwesome'
@@ -24,11 +23,22 @@ const style = {
 
 
 const ModalWallet = () => {
-  const { handleOpen, handleClose, openWallet } = useContext(Context) 
+
+  const [toggle, setToogle] = useState('')
+  console.log(toggle);
+
+  const handleToggle = () => {
+    if (toggle === true) {
+      setToogle(false)
+    }else {
+      setToogle(true);
+    }
+  }
+
   return (
     <div>
       <Button 
-        onClick={handleOpen}
+        onClick={handleToggle}
         id='WALLET'
         variant="contained"
             sx={{ 
@@ -42,8 +52,8 @@ const ModalWallet = () => {
         </Button>
       <Modal
         hideBackdrop
-        open={openWallet}
-        onClose={handleClose}
+        open={toggle}
+        onClose={handleToggle}
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description"
       >
@@ -56,7 +66,7 @@ const ModalWallet = () => {
           após fazer o login na aplicação na área superior direito tem o somatório do valores 
           de todas as tabelas e o valor total sempre e atualizado quando adicionado, excluído ou editado um valor na tabela.
           </p>
-          <h5>Link do repositório no icone do Github.</h5>
+          <h5>Link do repositório no ícone do Github.</h5>
           <IconButton
             size="large"
             color="primary"
@@ -78,7 +88,7 @@ const ModalWallet = () => {
             <Deploy fontSize="inherit" />
           </IconButton>
           <Button 
-            onClick={handleClose} 
+            onClick={handleToggle} 
             variant="contained"
             id='WALLET'
             sx={{ 

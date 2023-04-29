@@ -1,8 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
-import Context from '../context/Context';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -23,11 +22,22 @@ const style = {
 
 
 const ModalTFC = () => {
-  const { handleOpen, handleClose, openTFC } = useContext(Context) 
+
+  const [toggle, setToogle] = useState('')
+
+  const handleToggle = () => {
+    if (toggle === true) {
+      setToogle(false)
+    }else {
+      setToogle(true);
+    }
+  }
+
+
   return (
     <div>
       <Button 
-        onClick={handleOpen}
+        onClick={handleToggle}
         id="TFC"
         variant="contained"
             sx={{ 
@@ -41,8 +51,8 @@ const ModalTFC = () => {
         </Button>
       <Modal
         hideBackdrop
-        open={openTFC}
-        onClose={handleClose}
+        open={toggle}
+        onClose={handleToggle}
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description"
       >
@@ -69,7 +79,7 @@ const ModalTFC = () => {
             <GitHubIcon fontSize="inherit" />
           </IconButton>
           <Button 
-            onClick={handleClose} 
+            onClick={handleToggle} 
             variant="contained"
             id='TFC'
             sx={{ 

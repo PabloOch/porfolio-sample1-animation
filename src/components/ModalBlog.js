@@ -1,8 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
-import Context from '../context/Context';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -23,11 +22,21 @@ const style = {
 
 
 const ModalCardStore = () => {
-  const { handleOpen, handleClose, openBlog } = useContext(Context) 
+
+  const [toggle, setToogle] = useState('')
+
+  const handleToggle = () => {
+    if (toggle === true) {
+      setToogle(false)
+    }else {
+      setToogle(true);
+    }
+  }
+  
   return (
     <div>
       <Button 
-        onClick={handleOpen}
+        onClick={handleToggle}
         id='BLOGS API'
         variant="contained"
             sx={{ 
@@ -41,8 +50,8 @@ const ModalCardStore = () => {
         </Button>
       <Modal
         hideBackdrop
-        open={openBlog}
-        onClose={handleClose}
+        open={toggle}
+        onClose={handleToggle}
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description"
       >
@@ -68,7 +77,7 @@ const ModalCardStore = () => {
             <GitHubIcon fontSize="inherit" />
           </IconButton>
           <Button 
-            onClick={handleClose} 
+            onClick={handleToggle} 
             variant="contained"
             id='BLOGS API'
             sx={{ 
