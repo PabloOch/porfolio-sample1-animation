@@ -27,11 +27,12 @@ function Home() {
             variant="h1"
             component="h1"
             sx={{
+              textAlign: 'center',
               fontSize: {
                 lg: '5rem',
-                md: '6rem',
-                sm: '6rem',
-                xs: '3rem',
+                md: '4rem',
+                sm: '3rem',
+                xs: '2rem',
               },
               color: 'text.grey',
             }}
