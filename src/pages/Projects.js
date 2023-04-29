@@ -11,9 +11,10 @@ import ModalBlog from '../components/ModalBlog';
 import ModalTFC from '../components/ModalTFC';
 import ModalWallet from '../components/ModalWallet';
 import ModalStarWars from '../components/ModalStarWars';
-
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Projects() {
+  const matches = useMediaQuery('(min-width:850px)');
   return (
     <div>
       <Container
@@ -41,7 +42,7 @@ function Projects() {
         </Typography>
 
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid item xs={2} align="center" md={3}>
+          <Grid item xs={12} sm={6} md={3} xl={0} align="center">
             <CardMedia
               component="img"
               height="260"
@@ -57,7 +58,7 @@ function Projects() {
             />
             <ModalCardAPP/>
           </Grid>
-          <Grid item xs={2} align="center" md={3}>
+          <Grid item xs={12} sm={6} md={3} xl={0} align="center">
             <CardMedia
               component="img"
               height="260"
@@ -73,7 +74,7 @@ function Projects() {
             />
             <ModalCardStore/>
           </Grid>
-          <Grid item xs={2} align="center" md={3}>
+          <Grid item xs={12} sm={6} md={3} xl={0} align="center">
             <CardMedia
               component="img"
               height="260"
@@ -89,7 +90,7 @@ function Projects() {
             />
             <ModalBlog/>
           </Grid>
-          <Grid item xs={2} align="center" md={3}>
+          <Grid item xs={12} sm={6} md={3} xl={0} align="center">
             <CardMedia
               component="img"
               height="260"
@@ -105,7 +106,7 @@ function Projects() {
             />
             <ModalTFC />
           </Grid>
-          <Grid item xs={2} align="center" md={3}>
+          <Grid item xs={12} sm={6} md={3} xl={0} align="center">
             <CardMedia
               component="img"
               height="260"
@@ -123,7 +124,7 @@ function Projects() {
             />
             <ModalWallet />
           </Grid>
-          <Grid item xs={2} align="center" md={3}>
+          <Grid item xs={12} sm={6} md={3} xl={0} align="center">
             <CardMedia
               component="img"
               height="260"
@@ -140,7 +141,7 @@ function Projects() {
             />
             <ModalStarWars />
           </Grid>
-          <Grid item xs={2} align="center" md={3}>
+          <Grid item xs={12} sm={6} md={3} xl={0} align="center">
             <CardMedia
               component="img"
               height="260"
@@ -158,7 +159,9 @@ function Projects() {
           </Grid>
         </Grid>
       </Container>
-      <Footer />
+      {
+        matches ? <Footer /> : null
+      }
     </div>
   )
 }

@@ -6,8 +6,10 @@ import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import { aprendidas, desenvolvendo } from '../images/icons/Skill';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Stacks() {
+  const matches = useMediaQuery('(min-width:700px)');
   return (
     <div>
       <Stack
@@ -98,7 +100,9 @@ function Stacks() {
         </Grid>
       </Container>
       </Stack>
-      <Footer />
+      {
+        matches ? <Footer /> : null
+      }
     </div>
   )
 }
