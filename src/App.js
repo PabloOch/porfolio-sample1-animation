@@ -4,9 +4,10 @@ import Home from './pages/Home';
 import Stacks from './pages/Stacks';
 import Projects from './pages/Projects';
 import About from './pages/About';
-import Header from './components/Header';
 import Provider from './context/Provider';
 import GlobalStyle from './util/GlobalStyled'
+import MediaQuery from './components/MediaQuery'
+
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
     <div>
       <Provider>
         <GlobalStyle/>
-        <Header />
+        <MediaQuery/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/stacks' element={<Stacks />} />
