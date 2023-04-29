@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-key */
-  import * as React from 'react';
+  import React, { useState } from 'react';
   import { Link } from 'react-router-dom'
   import AppBar from '@mui/material/AppBar';
   import Box from '@mui/material/Box';
@@ -9,9 +9,7 @@
   import Menu from '@mui/material/Menu';
   import MenuIcon from '@mui/icons-material/Menu';
   import Container from '@mui/material/Container';
-  import Avatar from '@mui/material/Avatar';
   import Button from '@mui/material/Button';
-  import Tooltip from '@mui/material/Tooltip';
   import MenuItem from '@mui/material/MenuItem';
 
   const pages = [
@@ -22,23 +20,16 @@
   ];
 
   function HomeMobile() {
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
+    const [anchorElNav, setAnchorElNav] = useState(null);
 
     const handleOpenNavMenu = (event) => {
       setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event) => {
-      setAnchorElUser(event.currentTarget);
     };
 
     const handleCloseNavMenu = () => {
       setAnchorElNav(null);
     };
 
-    const handleCloseUserMenu = () => {
-      setAnchorElUser(null);
-    };
 
     return (
       <AppBar position="static">
@@ -98,15 +89,11 @@
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-              <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Typography
-                  color={'white'}
-                  >
-                    Jonathan Santos
-                </Typography>
-                </IconButton>
-              </Tooltip>
+              <Typography
+                color={'white'}
+              >
+                Jonathan Santos
+              </Typography>
             </Box>
           </Toolbar>
         </Container>
