@@ -43,6 +43,7 @@ const ModalCardStore = () => {
               color:'black',
               background: 'white',
               marginTop:'20px',
+              marginBottom:'20px',
               border: 'solid black 1px',
               '&:hover':{ border:'black', background: 'black', color: 'white'} }}
         >
@@ -77,7 +78,6 @@ const ModalCardStore = () => {
           <Button 
             onClick={handleToggle} 
             variant="contained"
-            id='STORE MANAGER'
             sx={{ 
               color:'black',
               background: 'white',

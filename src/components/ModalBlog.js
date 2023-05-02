@@ -37,12 +37,12 @@ const ModalCardStore = () => {
     <div>
       <Button 
         onClick={handleToggle}
-        id='BLOGS API'
         variant="contained"
             sx={{ 
               color:'black',
               background: 'white',
               marginTop:'20px',
+              marginBottom:'20px',
               border: 'solid black 1px',
               '&:hover':{ border:'black', background: 'black', color: 'white'} }}
         >
@@ -79,7 +79,6 @@ const ModalCardStore = () => {
           <Button 
             onClick={handleToggle} 
             variant="contained"
-            id='BLOGS API'
             sx={{ 
               color:'black',
               background: 'white',

@@ -5,6 +5,7 @@ import coming from  '../project/coming.jpg'
 import tfc from '../project/Tfc.jpeg'
 import carteira from '../project/carteira.png'
 import starwars from '../project/starwars.webp'
+import foodDelivery from '../project/foodDelivery.png'
 
 const images = {
   apprecipe: {
@@ -33,6 +34,10 @@ const images = {
 
   StarWars: {
     img: starwars
+  },
+
+  FoodDelivery: {
+    img: foodDelivery
   }
 }
 
