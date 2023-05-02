@@ -39,12 +39,10 @@ const ModalWallet = () => {
     <div>
       <Button 
         onClick={handleToggle}
-        id='WALLET'
         variant="contained"
             sx={{ 
               color:'black',
               background: 'white',
-              marginTop:'20px',
               border: 'solid black 1px',
               '&:hover':{ border:'black', background: 'black', color: 'white'} }}
         >
@@ -90,7 +88,6 @@ const ModalWallet = () => {
           <Button 
             onClick={handleToggle} 
             variant="contained"
-            id='WALLET'
             sx={{ 
               color:'black',
               background: 'white',

@@ -37,12 +37,12 @@ const ModalCardAPP = () => {
     <div>
       <Button 
         onClick={handleToggle}
-        id='APP DE RECEITAS'
         variant="contained"
             sx={{ 
               color:'black',
               background: 'white',
               marginTop:'20px',
+              marginBottom:'20px',
               border: 'solid black 1px',
               '&:hover':{ border:'black', background: 'black', color: 'white'} }}
         >
@@ -77,7 +77,6 @@ const ModalCardAPP = () => {
           <Button 
             onClick={handleToggle} 
             variant="contained"
-            id='APP DE RECEITAS'
             sx={{ 
               color:'black',
               background: 'white',

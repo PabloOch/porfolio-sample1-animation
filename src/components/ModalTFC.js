@@ -38,7 +38,6 @@ const ModalTFC = () => {
     <div>
       <Button 
         onClick={handleToggle}
-        id="TFC"
         variant="contained"
             sx={{ 
               color:'black',
@@ -81,7 +80,6 @@ const ModalTFC = () => {
           <Button 
             onClick={handleToggle} 
             variant="contained"
-            id='TFC'
             sx={{ 
               color:'black',
               background: 'white',

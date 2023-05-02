@@ -38,12 +38,10 @@ const ModalStarWars = () => {
     <div>
       <Button 
         onClick={handleToggle}
-        id='STARWARS'
         variant="contained"
             sx={{ 
               color:'black',
               background: 'white',
-              marginTop:'20px',
               border: 'solid black 1px',
               '&:hover':{ border:'black', background: 'black', color: 'white'} }}
         >
@@ -87,7 +85,6 @@ const ModalStarWars = () => {
           <Button 
             onClick={handleToggle} 
             variant="contained"
-            id='STARWARS'
             sx={{ 
               color:'black',
               background: 'white',
