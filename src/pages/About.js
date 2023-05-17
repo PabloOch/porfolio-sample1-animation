@@ -12,42 +12,22 @@ import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import Avatar  from '@mui/material/Avatar';
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 function About() {
-  const matches = useMediaQuery('(min-width:700px)');
+  console.log('AboutMobile')
   return (
-    <div>
+    <Box>
       <Container
         sx={{
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          marginBottom: '30px'
         }}
       >
         <Box
-               sx={{
-                 display: 'flex',
-                 justifyContent: 'center',
-                 width: '40vw',
-                 marginTop: '20px'
-               }}
-             >
-               <Avatar 
-                 src={ perfil } 
-                 alt='Foto de jonathan'
-                 sx={{
-                   width: '250px',
-                   height: '250px',
-                 }}
-                 />
-        </Box>
-        <Box
            sx={{
             display: 'flex',
-            flexDirection: 'column',
             justifyContent: 'center',
           }}
         >
@@ -55,23 +35,40 @@ function About() {
             sx={{
               display: 'flex',
               justifyContent: 'center',
+              width: '40vw',
+              // height: '50vh',
+            }}
+          >
+            <Avatar 
+              src={ perfil } 
+              alt='Foto de jonathan'
+              sx={{
+                width: '350px',
+                height: '350px',
+              }}
+              />
+          </Box>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
               flexWrap: 'wrap',
-              textAlign: 'center',
-              width: '70vw',
+              textAlign: 'start',
+              width: '40vw',
+              height: '30vh',
               }}
             >
             <Typography 
-              variant='h3'
+              variant='h4'
               sx={{
-                fontSize: '1.5rem',
+                fontSize: '25px',
                 fontWeight: '600',
                 marginTop: '20px',
-                marginBottom: '20px',
               }}
               >
               Sou um aspirante a Desenvolvedor Web em constante aprendizado.
             </Typography>
-            <Typography variant='h6'>
+            <Typography sx={{fontSize: '1.2rem', marginTop: '15px'}}>
               { message }
             </Typography>
           </Box>
@@ -79,15 +76,17 @@ function About() {
         <Box>
           <Typography 
             variant='h4'
-            marginTop='20px'
             sx={{
+              marginTop: '50px',
               display: 'flex',
-              justifyContent: 'center',
+              justifyContent: 'center'
             }}
             >
               Contatos
             </Typography>
-          <Box sx={{ marginBottom: '60px'}}>
+          <Box sx={{
+            marginBottom: '50px',
+          }}>
             <IconButton
                 size="large"
                 color="primary"
@@ -144,10 +143,8 @@ function About() {
           </Box>
         </Box>
       </Container>
-      {
-        matches ? <Footer /> : null 
-      }
-    </div>
+      <Footer />
+    </Box>
   )
 }
 

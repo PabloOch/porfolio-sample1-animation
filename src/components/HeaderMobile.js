@@ -12,11 +12,17 @@
   import Button from '@mui/material/Button';
   import MenuItem from '@mui/material/MenuItem';
 
+
+  const styleLink ={
+    textDecoration: 'none',
+    color: 'black'
+  }
+
   const pages = [
-    <Link to="/">Home</Link>,
-    <Link to="/about">Sobre</Link>,
-    <Link to="/stacks">Stacks</Link>,
-    <Link to="/projects">Projetos</Link>,
+    <Link style={styleLink} to="/">Home</Link>,
+    <Link style={styleLink} to="/about">Sobre</Link>,
+    <Link style={styleLink} to="/stacks">Stacks</Link>,
+    <Link style={styleLink} to="/projects">Projetos</Link>,
   ];
 
   function HomeMobile() {
@@ -69,9 +75,9 @@
                   <MenuItem 
                     key={page} 
                     onClick={handleCloseNavMenu}
-                    sx={{textDecoration: 'none'}}
                   >
-                    <Typography textAlign="center">{page}</Typography>
+                    <Typography
+                      textAlign="center">{page}</Typography>
                   </MenuItem>
                 ))}
               </Menu>

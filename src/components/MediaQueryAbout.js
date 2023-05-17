@@ -8,7 +8,7 @@ function MediaQueryAbout() {
 
   return <div>
     {
-      matches ? <AboutMobile /> : <About />
+      matches ? <About /> : <AboutMobile />
     }
   </div>
 }

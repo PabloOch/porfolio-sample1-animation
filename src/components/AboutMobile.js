@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from './Footer'
+import Footer from '../components/Footer'
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -12,8 +12,10 @@ import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import Avatar  from '@mui/material/Avatar';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function About() {
+  const matches = useMediaQuery('(min-width:700px)');
   return (
     <div>
       <Container
@@ -22,11 +24,30 @@ function About() {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+          marginBottom: '30px'
         }}
       >
         <Box
+               sx={{
+                 display: 'flex',
+                 justifyContent: 'center',
+                 width: '40vw',
+                 marginTop: '20px'
+               }}
+             >
+               <Avatar 
+                 src={ perfil } 
+                 alt='Foto de jonathan'
+                 sx={{
+                   width: '250px',
+                   height: '250px',
+                 }}
+                 />
+        </Box>
+        <Box
            sx={{
             display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
           }}
         >
@@ -34,40 +55,23 @@ function About() {
             sx={{
               display: 'flex',
               justifyContent: 'center',
-              width: '40vw',
-              // height: '50vh',
-            }}
-          >
-            <Avatar 
-              src={ perfil } 
-              alt='Foto de jonathan'
-              sx={{
-                width: '350px',
-                height: '350px',
-              }}
-              />
-          </Box>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
               flexWrap: 'wrap',
-              textAlign: 'start',
-              width: '40vw',
-              height: '30vh',
+              textAlign: 'center',
+              width: '70vw',
               }}
             >
             <Typography 
-              variant='h4'
+              variant='h3'
               sx={{
-                fontSize: '25px',
+                fontSize: '1.25rem',
                 fontWeight: '600',
                 marginTop: '20px',
+                marginBottom: '20px',
               }}
               >
               Sou um aspirante a Desenvolvedor Web em constante aprendizado.
             </Typography>
-            <Typography variant='h6'>
+            <Typography sx={{fontSize: '1ren'}}>
               { message }
             </Typography>
           </Box>
@@ -75,17 +79,15 @@ function About() {
         <Box>
           <Typography 
             variant='h4'
+            marginTop='20px'
             sx={{
-              marginTop: '50px',
               display: 'flex',
-              justifyContent: 'center'
+              justifyContent: 'center',
             }}
             >
               Contatos
             </Typography>
-          <Box sx={{
-            marginBottom: '50px',
-          }}>
+          <Box sx={{ marginBottom: '60px'}}>
             <IconButton
                 size="large"
                 color="primary"
@@ -142,7 +144,9 @@ function About() {
           </Box>
         </Box>
       </Container>
-      <Footer />
+      {
+        matches ? <Footer /> : null 
+      }
     </div>
   )
 }
