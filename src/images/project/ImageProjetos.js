@@ -6,6 +6,7 @@ import tfc from '../project/Tfc.jpeg'
 import carteira from '../project/carteira.png'
 import starwars from '../project/starwars.webp'
 import foodDelivery from '../project/foodDelivery.png'
+import trivia from '../project/trivia.svg'
 
 const images = {
   apprecipe: {
@@ -38,6 +39,10 @@ const images = {
 
   FoodDelivery: {
     img: foodDelivery
+  },
+
+  trivia: {
+    img: trivia
   }
 }
 

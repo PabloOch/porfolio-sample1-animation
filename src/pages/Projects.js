@@ -13,10 +13,11 @@ import ModalWallet from '../components/ModalWallet';
 import ModalStarWars from '../components/ModalStarWars';
 import ModalFoodDelivery from '../components/ModalFoodDelivery';
 import useMediaQuery from '@mui/material/useMediaQuery';
-
+import ModalTrivia from '../components/ModalTrivia';
 
 function Projects() {
   const matches = useMediaQuery('(min-width:850px)');
+ 
   return (
     <div>
       <Container
@@ -160,6 +161,23 @@ function Projects() {
               }}
             />
             <ModalFoodDelivery />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3} xl={0} align="center">
+            <CardMedia
+              component="img"
+              height="260"
+              image={images.trivia.img}
+              alt='trivia'
+              sx={{
+                width: 240,
+                borderRadius: '9px',
+                margin: '20px',
+                '&:hover': {
+                  boxShadow: '4px 4px 4px 1px rgba(0, 0, 0, 0.2)'
+                }
+              }}
+            />
+            <ModalTrivia />
           </Grid>
           <Grid item xs={12} sm={6} md={3} xl={0} align="center">
             <CardMedia
