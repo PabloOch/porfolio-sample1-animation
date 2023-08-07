@@ -25,8 +25,7 @@ const style = {
 const ModalWallet = () => {
 
   const [toggle, setToogle] = useState('')
-  console.log(toggle);
-
+  
   const handleToggle = () => {
     if (toggle === true) {
       setToogle(false)

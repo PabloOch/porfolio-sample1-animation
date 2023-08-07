@@ -14,7 +14,6 @@ import ContactPageIcon from '@mui/icons-material/ContactPage';
 import Avatar  from '@mui/material/Avatar';
 
 function About() {
-  console.log('AboutMobile')
   return (
     <Box>
       <Container
