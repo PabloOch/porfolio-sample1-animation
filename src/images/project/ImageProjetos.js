@@ -7,6 +7,7 @@ import carteira from '../project/carteira.png'
 import starwars from '../project/starwars.webp'
 import foodDelivery from '../project/foodDelivery.png'
 import trivia from '../project/trivia.svg'
+import transaction from '../project/Transaction.jpeg'
 
 const images = {
   apprecipe: {
@@ -43,6 +44,9 @@ const images = {
 
   trivia: {
     img: trivia
+  }, 
+  Transaction: {
+    img: transaction
   }
 }
 
