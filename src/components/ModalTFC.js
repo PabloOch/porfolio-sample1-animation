@@ -66,7 +66,7 @@ const ModalTFC = () => {
           autenticado a API responderá trazendo um token no corpo da requisição. 
           O token deverá ser inserido no cabeçalho de cada requisição privada, com o intuito de autenticação.
           </p>
-          <h5>Link do repositório no icone do Github.</h5>
+          <h5>Link do repositório está no icone do Github.</h5>
           <IconButton
             size="large"
             color="primary"

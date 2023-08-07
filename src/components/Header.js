@@ -14,7 +14,6 @@ function Header() {
 
   return (
     <main>
-      { console.log(w) }
       {window.innerWidth < Number(w)? (<HomeMobile/>):(
       <LinkPosition>
         <div>

@@ -22,7 +22,7 @@ const style = {
 };
 
 
-const ModalStarWars = () => {
+const ModalPagarBem = () => {
 
   const [toggle, setToogle] = useState('')
 
@@ -45,7 +45,7 @@ const ModalStarWars = () => {
               border: 'solid black 1px',
               '&:hover':{ border:'black', background: 'black', color: 'white'} }}
         >
-          StarWars
+          PagarBem
         </Button>
       <Modal
         hideBackdrop
@@ -55,11 +55,12 @@ const ModalStarWars = () => {
         aria-describedby="child-modal-description"
       >
         <Box sx={{ ...style, width: 200 }}>
-          <h2 id="child-modal-title">StarWars</h2>
+          <h2 id="child-modal-title">FoodDelivery</h2>
           <p id="child-modal-description">
-          Este projeto trata-se de uma aplicação com a tematica de Starwars e faz requisição
-           a uma api para consumir dados dos planetas e suas características, 
-           está aplicação possibilita fazer filtros em uma tabela de diversas formas.
+          A API PagarMe é uma proposta de resolução do desafio técnico da Pager.me e oferece um sistema de Payment Service Provider (PSP) super simplificado.
+          Para esta proposta, foi adicionado um sistema de cadastro para que o usuário cadastrado possa realizar transações financeiras quando autorizado.
+          Esta aplicação gera autenticação utilizando bearer token através do JWT e tem como propósito simular o ciclo de uso, que se inicia com o cadastro, 
+          autorização e manipulação dos dados. Espero que gostem, foi muito divertido desenvolver esta solução.
           </p>
           <h5>Link do repositório está no icone do Github.</h5>
           <IconButton
@@ -67,7 +68,7 @@ const ModalStarWars = () => {
             color="primary"
             backgroudcolor="white"
             sx={{ p: 0, pl: 2, color:'black' }}
-            href="https://github.com/JonathanProjetos/StarWarsSeachPlanet"
+            href="https://github.com/JonathanProjetos/PagarMe"
             target="_blank"
           >
             <GitHubIcon fontSize="inherit" />
@@ -77,7 +78,7 @@ const ModalStarWars = () => {
             color="primary"
             backgroudcolor="white"
             sx={{ p: 0, pl: 2, color:'black' }}
-            href="https://star-wars-seach-planet-jonathanprojetos.vercel.app/"
+            href="https://pagarme-production.up.railway.app/docs/"
             target="_blank"
           >
             <Deploy fontSize="inherit" />
@@ -99,4 +100,4 @@ const ModalStarWars = () => {
   )
 }
 
-export default ModalStarWars;
+export default ModalPagarBem;

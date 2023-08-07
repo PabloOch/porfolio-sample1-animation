@@ -14,10 +14,11 @@ import ModalStarWars from '../components/ModalStarWars';
 import ModalFoodDelivery from '../components/ModalFoodDelivery';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import ModalTrivia from '../components/ModalTrivia';
+import ModalPagarBem from '../components/ModalPagarBem';
 
 function Projects() {
   const matches = useMediaQuery('(min-width:850px)');
- 
+
   return (
     <div>
       <Container
@@ -50,7 +51,8 @@ function Projects() {
               component="img"
               height="260"
               image={images.apprecipe.img}
-              alt='app-recipes'
+              alt='app recipe'
+              onClick={() => window.location.href = 'https://github.com/JonathanProjetos/App-Recipes'}
               sx={{
                 width: 240,
                 borderRadius: '9px',
@@ -66,6 +68,7 @@ function Projects() {
               component="img"
               height="260"
               image={images.storeManager.img}
+              onClick={() => window.location.href = 'https://github.com/JonathanProjetos/Store-Manager'}
               alt='store-manager'
               sx={{
                 width: 240,
@@ -82,6 +85,7 @@ function Projects() {
               component="img"
               height="260"
               image={images.blogs.img}
+              onClick={() => window.location.href = 'https://github.com/JonathanProjetos/Blogs-Api'}
               alt='blogs api'
               sx={{
                 width: 240,
@@ -98,6 +102,7 @@ function Projects() {
               component="img"
               height="260"
               image={images.TFC.img}
+              onClick={() => window.location.href = 'https://github.com/JonathanProjetos/TFC-Trybe-Football-Club'}
               alt='Trybe futball club'
               sx={{
                 width: 240,
@@ -114,6 +119,7 @@ function Projects() {
               component="img"
               height="260"
               image={images.Wallet.img}
+              onClick={() => window.location.href = 'https://wallet-1p88arfrh-jonathanprojetos.vercel.app/'}
               alt='Wallet'
               sx={{
                 width: 240,
@@ -133,6 +139,7 @@ function Projects() {
               height="260"
               width="200"
               image={images.StarWars.img}
+              onClick={() => window.location.href = 'https://star-wars-seach-planet-jonathanprojetos.vercel.app/'}
               alt='StarWars'
               sx={{
                 width: 240,
@@ -150,6 +157,7 @@ function Projects() {
               component="img"
               height="260"
               image={images.FoodDelivery.img}
+              onClick={() => window.location.href = 'https://food-delivery-production-fba9.up.railway.app/docs/'}
               alt='food-delivery'
               sx={{
                 width: 240,
@@ -167,6 +175,7 @@ function Projects() {
               component="img"
               height="260"
               image={images.trivia.img}
+              onClick={() => window.location.href = 'https://trivia-nu-ten.vercel.app/'}
               alt='trivia'
               sx={{
                 width: 240,
@@ -178,6 +187,24 @@ function Projects() {
               }}
             />
             <ModalTrivia />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3} xl={0} align="center">
+            <CardMedia
+              component="img"
+              height="260"
+              image={images.Transaction.img}
+              onClick={() => window.location.href = 'https://pagarme-production.up.railway.app/docs/'}
+              alt='Pagar Bem'
+              sx={{
+                width: 240,
+                borderRadius: '9px',
+                margin: '20px',
+                '&:hover': {
+                  boxShadow: '4px 4px 4px 1px rgba(0, 0, 0, 0.2)'
+                }
+              }}
+            />
+            <ModalPagarBem />
           </Grid>
           <Grid item xs={12} sm={6} md={3} xl={0} align="center">
             <CardMedia
