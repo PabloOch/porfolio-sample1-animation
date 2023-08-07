@@ -63,7 +63,7 @@ const ModalFoodDelivery = () => {
           à quantidade de usuários cadastrados e à quantidade de produtos por usuário em cada etapa.
           A API também conta com uma documentação interna feita com o Swagger, que traz facilidade e rapidez ao acesso dos endpoints da aplicação.
           </p>
-          <h5>Link do repositório no icone do Github.</h5>
+          <h5>Link do repositório está no icone do Github.</h5>
           <IconButton
             size="large"
             color="primary"

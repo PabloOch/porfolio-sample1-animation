@@ -62,7 +62,7 @@ const ModalPagarBem = () => {
           Esta aplicação gera autenticação utilizando bearer token através do JWT e tem como propósito simular o ciclo de uso, que se inicia com o cadastro, 
           autorização e manipulação dos dados. Espero que gostem, foi muito divertido desenvolver esta solução.
           </p>
-          <h5>Link do repositório no icone do Github.</h5>
+          <h5>Link do repositório está no icone do Github.</h5>
           <IconButton
             size="large"
             color="primary"

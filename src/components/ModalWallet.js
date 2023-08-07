@@ -63,7 +63,7 @@ const ModalWallet = () => {
           após fazer o login na aplicação na área superior direito tem o somatório do valores 
           de todas as tabelas e o valor total sempre e atualizado quando adicionado, excluído ou editado um valor na tabela.
           </p>
-          <h5>Link do repositório no ícone do Github.</h5>
+          <h5>Link do repositório está no icone do Github.</h5>
           <IconButton
             size="large"
             color="primary"

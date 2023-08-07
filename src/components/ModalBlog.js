@@ -65,7 +65,7 @@ const ModalCardStore = () => {
           A arquitetura da aplicação se baseia em relações entre usuário por postagem e de postagem por categorias. 
           Dentro do projeto existe um diagrama exemplificando estas ligações.
           </p>
-          <h5>Link do repositório no icone do Github.</h5>
+          <h5>Link do repositório está no icone do Github.</h5>
           <IconButton
             size="large"
             color="primary"

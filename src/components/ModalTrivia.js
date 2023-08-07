@@ -62,7 +62,7 @@ const ModalTrivia = () => {
           A pontuação é baseada na quantidade de perguntas corretas e na rapidez em respondê-las. 
           É uma opção versátil e acessível para todos os públicos.
           </p>
-          <h5>Link do repositório no ícone do Github.</h5>
+          <h5>Link do repositório está no icone do Github.</h5>
           <IconButton
             size="large"
             color="primary"

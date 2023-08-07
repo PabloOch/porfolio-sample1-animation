@@ -61,7 +61,7 @@ const ModalStarWars = () => {
            a uma api para consumir dados dos planetas e suas características, 
            está aplicação possibilita fazer filtros em uma tabela de diversas formas.
           </p>
-          <h5>Link do repositório no icone do Github.</h5>
+          <h5>Link do repositório está no icone do Github.</h5>
           <IconButton
             size="large"
             color="primary"
