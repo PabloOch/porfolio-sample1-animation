@@ -14,7 +14,7 @@ import ModalStarWars from '../components/ModalStarWars';
 import ModalFoodDelivery from '../components/ModalFoodDelivery';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import ModalTrivia from '../components/ModalTrivia';
-import ModalPagarBem from '../components/ModalPagarBem';
+import ModalPagarBem from '../components/ModalPagarMe';
 
 function Projects() {
   const matches = useMediaQuery('(min-width:850px)');
@@ -194,7 +194,7 @@ function Projects() {
               height="260"
               image={images.Transaction.img}
               onClick={() => window.location.href = 'https://pagarme-production.up.railway.app/docs/'}
-              alt='Pagar Bem'
+              alt='PagarMe'
               sx={{
                 width: 240,
                 borderRadius: '9px',

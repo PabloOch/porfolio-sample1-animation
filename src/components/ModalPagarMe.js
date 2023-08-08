@@ -45,7 +45,7 @@ const ModalPagarBem = () => {
               border: 'solid black 1px',
               '&:hover':{ border:'black', background: 'black', color: 'white'} }}
         >
-          PagarBem
+          PagarMe
         </Button>
       <Modal
         hideBackdrop
