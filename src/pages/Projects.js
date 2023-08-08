@@ -14,7 +14,7 @@ import ModalStarWars from '../components/ModalStarWars';
 import ModalFoodDelivery from '../components/ModalFoodDelivery';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import ModalTrivia from '../components/ModalTrivia';
-import ModalPagarBem from '../components/ModalPagarMe';
+import ModalPagarMe from '../components/ModalPagarMe';
 
 function Projects() {
   const matches = useMediaQuery('(min-width:850px)');
@@ -204,7 +204,7 @@ function Projects() {
                 }
               }}
             />
-            <ModalPagarBem />
+            <ModalPagarMe />
           </Grid>
           <Grid item xs={12} sm={6} md={3} xl={0} align="center">
             <CardMedia
