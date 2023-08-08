@@ -55,7 +55,7 @@ const ModalPagarBem = () => {
         aria-describedby="child-modal-description"
       >
         <Box sx={{ ...style, width: 200 }}>
-          <h2 id="child-modal-title">FoodDelivery</h2>
+          <h2 id="child-modal-title">PagarMe</h2>
           <p id="child-modal-description">
           A API PagarMe é uma proposta de resolução do desafio técnico da Pager.me e oferece um sistema de Payment Service Provider (PSP) super simplificado.
           Para esta proposta, foi adicionado um sistema de cadastro para que o usuário cadastrado possa realizar transações financeiras quando autorizado.
