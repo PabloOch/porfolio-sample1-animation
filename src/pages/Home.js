@@ -7,6 +7,7 @@ import { ButtonHome } from '../style/Header'
 import Context from '../context/Context';
 import Arrow from '../images/icons/arrow.svg'
 import Arrow1 from "../images/icons/arrow-1.svg";
+import MediaQuery from '../components/MediaQuery';
 
 function Home() {
   const [shown,  setIsShown] = useState(false)
@@ -87,21 +88,41 @@ function Home() {
           justifyContent: 'center',
         }}
       >
+        { MediaQuery() ?
         <ButtonHome
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
         onClick={ redirectAbout }
         >
           { shown? (
-            <img 
-          src={ Arrow1 } 
-          alt='Seta'/>
+            <img
+            src={ Arrow1 } 
+            alt='Seta'/>
           ) : (
-            <img 
+            <img
             src={ Arrow } 
             alt='Seta'/>
           ) }
         </ButtonHome>
+        :
+        <ButtonHome
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}
+        onClick={ redirectAbout }
+        >
+          { shown? (
+            <img
+            style={{ height: '7vh', width: '25vw',   }}
+            src={ Arrow1 } 
+            alt='Seta'/>
+          ) : (
+            <img
+            style={{ height: '7vh', width: '25vw'  }}
+            src={ Arrow } 
+            alt='Seta'/>
+          ) }
+        </ButtonHome>
+        }
       </Box>
     </>
   );
