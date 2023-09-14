@@ -55,7 +55,7 @@ const ModalTrivia = () => {
         aria-describedby="child-modal-description"
       >
         <Box sx={{ ...style, width: 200 }}>
-          <h2 id="child-modal-title">Wallet</h2>
+          <h2 id="child-modal-title">Trívia</h2>
           <p id="child-modal-description">
           Trivia é um jogo de perguntas e respostas divertido e educativo. 
           O objetivo é acertar o máximo de perguntas em um tempo determinado. 
